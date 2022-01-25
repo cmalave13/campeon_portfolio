@@ -1,20 +1,31 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+const logoStyle = {
+  maxWidth: '75%',
+  marginTop: '12px',
+}
+
+const h3Style = {
+  marginTop: '-20px',
+}
+
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span>
+        <img
+          style={logoStyle}
+          src="https://campeonprod.s3.amazonaws.com/Campeon_Gold.png"
+        />
+      </span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Campeon</h1>
+        <h3 style={h3Style}>Photography</h3>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Welcome to my portfolio, enjoy the vibes.
         </p>
       </div>
     </div>
